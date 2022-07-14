@@ -1,38 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dark {
+  background-color: hwb(235 9% 87%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#light {
+  background-color: hsl(0, 0%, 98%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.my-todo {
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  z-index: 10;
+}
+
+.header-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header-todo h1 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-weight: 700;
+}
+
+.theme {
+  cursor: pointer;
+}
+
+.form {
+  border-radius: 0.2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#dark .form {
+  background-color: hsl(237, 14%, 26%);
+}
+
+#light .form {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.circle {
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid hsl(236, 9%, 61%);
+}
+
+.add-task {
+  background-color: transparent;
+  border: none;
+  padding: 0.6rem 1rem;
+  flex: 1;
+  outline: none;
+}
+
+#dark .add-task {
+  color: hsl(234, 39%, 85%);
+}
+
+#light .add-task {
+  color: hsl(235, 19%, 35%);
+}
+
+.todo-container {
+  border-radius: .2rem;
+  max-height: 350px;
   display: flex;
   flex-direction: column;
+  overflow: auto;
+}
+
+.no-task {
+  display: none;
+}
+
+#light .todo-container {
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#dark .todo-container {
+  background-color: hsl(237, 14%, 26%);
+}
+
+.todos {
+  margin-bottom: 3.5rem;
+}
+
+.todo {
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+#dark .todo {
+  color: hsl(234, 39%, 85%);
+  border-bottom: 1px solid hsl(233, 14%, 35%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+#light .todo {
+  color: hsl(235, 19%, 35%);
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+}
+
+.todo-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid hsl(236, 9%, 61%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  background-image: linear-gradient(to right top, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.list {
+  flex: 1;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+#dark .line {
+  color: hsl(234, 11%, 52%);
+}
+
+#light .line {
+  color: hsl(233, 11%, 84%);
+}
+
+.base {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#dark .base {
+  color: hsl(234, 39%, 85%);
+  background-color: hsl(237, 14%, 26%);
+
+}
+
+#light .base {
+  color: hsl(235, 19%, 35%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+.delete {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .my-todo {
+    width: 80%;
+    margin: auto;
+    z-index: 10;
   }
 }
