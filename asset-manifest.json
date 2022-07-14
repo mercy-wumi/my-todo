@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/my-todo/static/css/main.b4add45c.css",
+    "main.js": "/my-todo/static/js/main.2d284bc3.js",
+    "static/media/bg-desktop-light.jpg": "/my-todo/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/my-todo/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "index.html": "/my-todo/index.html",
+    "static/media/icon-sun.svg": "/my-todo/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "static/media/icon-moon.svg": "/my-todo/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-cross.svg": "/my-todo/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
+    "static/media/icon-check.svg": "/my-todo/static/media/icon-check.a8fb15d0278c8e312df5fc8364fef863.svg",
+    "main.b4add45c.css.map": "/my-todo/static/css/main.b4add45c.css.map",
+    "main.2d284bc3.js.map": "/my-todo/static/js/main.2d284bc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4add45c.css",
+    "static/js/main.2d284bc3.js"
+  ]
+}
